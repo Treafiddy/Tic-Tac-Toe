@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+        <title>Javascript project</title>
+    </head>
+    <body>
+            
+        <h2>Tic Tac Toe</h2>
+
+        <div id="turnCounter">
+            Player 1's Turn
+        </div>
+        <div id="scoreBox" >
+            <h3>Score</h3>
+            <p id="playerScore">Player 1: 0  Player 2: 0</p>
+            
+        </div>
+        <div >
+            <table id="board">
+                <tr>
+                    <td class="cell" id="box0" onclick="playerMove(event)"></td>
+                    <td class="cell" id="box1" onclick="playerMove(event)"></td>
+                    <td class="cell" id="box2" onclick="playerMove(event)"></td>
+                </tr>
+                    <td class="cell" id="box3" onclick="playerMove(event)"></td>
+                    <td class="cell" id="box4" onclick="playerMove(event)"></td>
+                    <td class="cell" id="box5" onclick="playerMove(event)"></td>
+                <tr>
+                    <td class="cell" id="box6" onclick="playerMove(event)"></td>
+                    <td class="cell" id="box7" onclick="playerMove(event)"></td>
+                    <td class="cell" id="box8" onclick="playerMove(event)"></td>
+                </tr>
+            </table>
+        </div>
+
+        <button id="reset">Reset Board</button>
+        <button id="resetScore">Reset Score</button>
+        <script defer src="script.js"></script>  
+    </body>
+</html>
