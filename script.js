@@ -73,8 +73,7 @@ function checkWin(player){
                let newWin = currentWins +1;
                localStorage.setItem(player, newWin);
                console.log(newWin);  
-               scoreBoard();
-                    
+               scoreBoard();                  
             }    
          } else {
             winCounter = 0;
@@ -110,16 +109,23 @@ function scoreBoard(){
 }
 
 
- function startOfGame() {
+function startOfGame() {
    let boardSave = localStorage.getItem("boardState")
    if(boardSave == ""){
       displayBoard();
    }
- }
+}
 
- startOfGame();
-// //function if localstorage isn't empty display board 
-// //call the function 
+function handleKeydown(event) {
+   if(event.key == "Enter" || event.key == " "){
+      playerMove(event)
+   }
+}
+// Create a function that accepts a keypress but only runs playermove() when
+// it's enter or space 
+
+startOfGame();
+
 
 
 
