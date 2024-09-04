@@ -1,15 +1,25 @@
+body {
+    background-color: rgb(175, 101, 243);
+    color: black;
+}
+
 .cell{
-    background-color: blueviolet;
+    background-color: greenyellow;
     padding-top: 30px;
     padding: 30px;
     flex-wrap: nowrap;
     align-items: center;
     height: 100px;
     width: 100px;
-    
-
 }
 
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
 
 
 h2 {
@@ -58,3 +68,31 @@ button{
     
 }
 
+button {
+    background-color: #d37204;
+    color: black;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 12px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #fcb045;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:focus, 
+button:focus-visible {
+    outline: 1px solid greenyellow;
+}
+
+button:active {
+    background-color: #4EFFDC;
+}
